@@ -1,0 +1,304 @@
+/*
+ --------------------------------------------------------------------------
+ QWidget
+ --------------------------------------------------------------------------
+*/
+
+QWidget {
+    border: 0px;
+    color: rgb(220, 220, 220, 220);
+    background-color: rgb(42, 42, 42, 255);
+    outline: none;
+}
+
+
+
+/*
+ --------------------------------------------------------------------------
+ QAbstractItemView
+ --------------------------------------------------------------------------
+*/
+
+QAbstractItemView {
+    border: 0px solid rgb(20, 20, 20, 255);
+    color: rgb(220, 220, 220, 220);
+    background-color: rgb(32, 32, 32, 255);
+    outline: none;
+}
+
+
+QHeaderView::section {
+    background-color: rgb(50, 50, 50, 255);
+    color: white;
+    padding-left: 12px;
+    border: 1px solid black;
+}
+
+
+
+/*
+ --------------------------------------------------------------------------
+ QPushButton
+ --------------------------------------------------------------------------
+*/
+
+QPushButton {
+    border-radius: 4px;
+    border: 0px groove;
+    background-color: rgb(25, 25, 25, 255);
+    color: white;
+    width: 100px;
+    height: 28px;
+}
+
+QPushButton:hover {
+    background-color: rgb(35, 35, 35, 255);
+}
+
+QPushButton:pressed {
+    background-color: rgb(10, 10, 10, 255);
+    border-style: inset;
+}
+
+QPushButton:disabled {
+    background-color: rgb(40, 40, 40, 255);
+    color: rgb(75, 75, 75, 255);
+}
+
+
+
+/*
+ --------------------------------------------------------------------------
+ QSplitter
+ --------------------------------------------------------------------------
+*/
+
+QSplitter:handle {
+    width: 4px;
+    background-color: rgb(65, 65, 65, 255);
+}
+
+QSplitter::handle:hover {
+    background-color: rgb(120, 120, 120, 255);
+}
+
+
+
+/*
+ --------------------------------------------------------------------------
+ QComboBox
+ --------------------------------------------------------------------------
+*/
+
+QComboBox {
+    border: 2px solid rgb(32, 32, 32, 255);
+    border-radius: 4px;
+    padding: 2px 2px 2px 2px;
+}
+
+QComboBox:editable {
+    background: rgb(32, 32, 32, 255);
+}
+
+QComboBox:!editable {
+    background: rgb(32, 32, 32, 255);
+}
+
+QComboBox::QAbstractItemView {
+    border: 0px solid rgb(255, 255, 255, 255);
+    padding: 0px 0px 0px 0px;
+}
+
+QComboBox:on {
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left-width: 0px;
+    border-left-color: rgb(20, 20, 20, 255);
+    border-left-style: solid;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+QComboBox::down-arrow {
+    width: 16px;
+    height: 16px;
+    image: url(ICON_PATH/icon_arrow_down.png);
+}
+
+
+
+/*
+ --------------------------------------------------------------------------
+ QLineEdit
+ --------------------------------------------------------------------------
+*/
+
+QLineEdit {
+    border 0px groove black;
+    border-radius: 4px;
+    color: rgb(220, 220, 220, 220);
+    background-color: rgb(32, 32, 32, 255);
+    selection-color: rgb(255, 255, 255, 255);
+    selection-background-color: rgb(100, 175, 255, 255);
+    padding: 2px 2px;
+}
+
+QLineEdit:hover {
+    background-color: rgb(28, 28, 28, 255)
+}
+
+QLineEdit:focus {
+    background-color: rgb(25, 25, 25, 255)
+}
+
+
+
+/*
+ --------------------------------------------------------------------------
+ QScrollBar
+ --------------------------------------------------------------------------
+*/
+
+QScrollBar:vertical
+{
+    width: 4px;
+    border-radius: 2px;
+    border: 0px solid black;
+    margin: 0px, 0px, 0px, 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: rgb(100, 100, 100, 120);
+}
+
+QScrollBar::handle:vertical
+{
+    width: 4px;
+    background-color: rgb(120, 120, 120, 120);
+    min-height: 20;
+    border-radius: 2px;
+}
+
+QScrollBar::handle:vertical:hover
+{
+    border: 0px solid #E0E0E0;
+    background-color: rgb(120, 120, 120, 200);
+}
+
+QScrollBar::handle:vertical::disabled
+{
+    background-color: rgb(100, 100, 100, 120);
+}
+
+QScrollBar::up-arrow:vertical
+{
+    border-width: 0px;
+    max-height: 0px;
+    min-width: 0px;
+}
+
+QScrollBar::down-arrow:vertical
+{
+    border-style: outset;
+    border-width: 0px;
+}
+
+QScrollBar::add-line:vertical
+{
+    height: 0px;
+    background-color: rgb(60, 60, 60, 50);
+    subcontrol-position: bottom;
+}
+
+QScrollBar::sub-line:vertical
+{
+    height: 0px;
+    background-color: rgb(60, 60, 60, 50);
+    subcontrol-position: top;
+}
+
+QScrollBar::add-page:vertical
+{
+    height: 0px;
+    background-color: rgb(60, 60, 60, 50);
+}
+
+QScrollBar::sub-page:vertical
+{
+    height: 0px;
+    background-color: rgb(60, 60, 60, 50);
+}
+
+QScrollBar:horizontal
+{
+    height: 4px;
+    border-radius: 2px;
+    border: 0px solid black;
+    margin: 0px, 0px, 0px, 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: rgb(100, 100, 100, 120);
+}
+
+QScrollBar::handle:horizontal
+{
+    height: 4px;
+    background-color: rgb(120, 120, 120, 120);
+    min-height: 20;
+    border-radius: 2px;
+}
+
+QScrollBar::handle:horizontal:hover
+{
+    border: 0px solid #E0E0E0;
+    background-color: rgb(120, 120, 120, 200);
+}
+
+QScrollBar::handle:horizontal::disabled
+{
+    background-color: rgb(100, 100, 100, 120);
+}
+
+QScrollBar::up-arrow:horizontal
+{
+    border-width: 0px;
+    max-height: 0px;
+    min-width: 0px;
+}
+
+QScrollBar::down-arrow:horizontal
+{
+    border-style: outset;
+    border-width: 0px;
+}
+
+QScrollBar::add-line:horizontal
+{
+    height: 0px;
+    background-color: rgb(60, 60, 60, 50);
+    subcontrol-position: bottom;
+}
+
+QScrollBar::sub-line:horizontal
+{
+    height: 0px;
+    background-color: rgb(60, 60, 60, 50);
+    subcontrol-position: top;
+}
+
+QScrollBar::add-page:horizontal
+{
+    height: 0px;
+    background-color: rgb(60, 60, 60, 50);
+}
+
+QScrollBar::sub-page:horizontal
+{
+    height: 0px;
+    background-color: rgb(60, 60, 60, 50);
+}

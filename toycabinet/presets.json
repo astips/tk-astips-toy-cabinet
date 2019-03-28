@@ -1,0 +1,11 @@
+{
+    "db_type": "postgres",
+    "db_info": {
+        "database": "toycabinet",
+        "host": "127.0.0.1",
+        "port": "5432",
+        "user": "postgres",
+        "password": "postgres"
+    },
+    "email": "animator.well@gmail.com"
+}

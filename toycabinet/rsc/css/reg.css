@@ -1,0 +1,69 @@
+/*
+ --------------------------------------------------------------------------
+ QLineEdit
+ --------------------------------------------------------------------------
+*/
+
+QLineEdit {
+    height: 32px;
+    border 0px groove black;
+    border-radius: 4px;
+    color: rgb(220, 220, 220, 220);
+    background-color: rgb(32, 32, 32, 255);
+    selection-color: rgb(220, 220, 220, 255);
+    selection-background-color: transparent;
+    padding: 2px 2px;
+}
+
+QLineEdit:hover {
+    background-color: rgb(30, 30, 30, 255)
+}
+
+QLineEdit:focus {
+    background-color: rgb(25, 25, 25, 255)
+}
+
+
+/*
+ --------------------------------------------------------------------------
+ QPushButton
+ --------------------------------------------------------------------------
+*/
+
+QPushButton {
+    width: 200px;
+    height: 30px;
+    border-radius: 0px;
+    border: 0px groove rgb(100, 175, 255, 200);
+    background-color: rgb(60, 75, 90, 255);
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: rgb(50, 60, 100, 255);
+}
+
+QPushButton:pressed {
+    background-color: rgb(50, 60, 100, 150);
+    border-style: inset;
+}
+
+
+
+/*
+ --------------------------------------------------------------------------
+ QTextEdit
+ --------------------------------------------------------------------------
+*/
+
+QTextEdit {
+    border 0px groove black;
+    border-radius: 2px;
+    color: rgb(220, 220, 220, 220);
+    background-color: rgb(32, 32, 32, 255);
+    selection-color: rgb(220, 220, 220, 220);
+    selection-background-color: rgb(150, 42, 255, 50);
+    padding: 2px 2px;
+    font-weight: 200;
+    font: 20px;
+}

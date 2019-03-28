@@ -1,0 +1,54 @@
+/*
+ --------------------------------------------------------------------------
+ QFrame
+ --------------------------------------------------------------------------
+*/
+
+QFrame {
+    background-color: rgb(20, 20, 20, 255);
+    border-radius: 0px;
+}
+
+
+
+/*
+ --------------------------------------------------------------------------
+ QLabel
+ --------------------------------------------------------------------------
+*/
+
+QLabel {
+    border: 0px;
+    background-color: transparent;
+    color: rgb(100, 175, 255, 60);
+    font: 21px bold;
+    font-weight: 500;
+    outline: none;
+}
+
+
+
+/*
+ --------------------------------------------------------------------------
+ QLineEdit
+ --------------------------------------------------------------------------
+*/
+
+QLineEdit {
+    height: 32px;
+    border 2px groove black;
+    border-radius: 6px;
+    color: rgb(220, 220, 220, 220);
+    background-color: rgb(15, 15, 15, 255);
+    selection-color: rgb(220, 220, 220, 255);
+    selection-background-color: transparent;
+    padding: 2px 2px;
+}
+
+QLineEdit:hover {
+    background-color: rgb(12, 12, 12, 255)
+}
+
+QLineEdit:focus {
+    background-color: rgb(10, 10, 10, 255)
+}

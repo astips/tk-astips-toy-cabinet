@@ -1,0 +1,4 @@
+#!/bin/bash -f
+
+
+python ./src/reset_admin.py

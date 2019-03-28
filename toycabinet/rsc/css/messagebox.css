@@ -1,0 +1,70 @@
+/*
+ --------------------------------------------------------------------------
+ QFrame
+ --------------------------------------------------------------------------
+*/
+
+QFrame {
+    background-color: BASIC_COLOR;
+    border-radius: 20px;
+}
+
+
+
+/*
+ --------------------------------------------------------------------------
+ QTextBrowser
+ --------------------------------------------------------------------------
+*/
+
+QTextBrowser QTextEdit{
+    border: 0px;
+    background-color: transparent;
+    color: rgb(50, 50, 50, 255);
+    font: 16px bold;
+    font-weight: 500;
+    outline: none;
+}
+
+
+
+/*
+ --------------------------------------------------------------------------
+ QLabel
+ --------------------------------------------------------------------------
+*/
+
+QLabel {
+    border: 0px;
+    background-color: transparent;
+    color: rgb(50, 50, 50, 255);
+    font: 16px bold;
+    font-weight: 500;
+    outline: none;
+    selection-background-color: rgb(42, 42, 255, 50);
+}
+
+
+
+/*
+ --------------------------------------------------------------------------
+ QPushButton
+ --------------------------------------------------------------------------
+*/
+
+QPushButton {
+    border-radius: 4px;
+    border: 2px solid DARKER_COLOR;
+    background-color: transparent;
+    color: rgb(60, 60, 60, 255);
+    font: 16px;
+    font-weight: 10;
+}
+
+QPushButton:hover {
+    background-color: LIGHTER_COLOR;
+}
+
+QPushButton:pressed {
+    background-color: DARKER_COLOR;
+}

@@ -1,0 +1,96 @@
+/*
+ --------------------------------------------------------------------------
+ QCompleter
+ --------------------------------------------------------------------------
+*/
+
+CompleterItemView {
+    border: 2px solid rgb(20, 20, 20, 255);
+    color: rgb(220, 220, 220, 255);
+    background-color: rgb(32, 32, 32, 255);
+    outline: none;
+}
+
+
+CompleterItemView::item {
+    outline: none;
+    background-color: rgb(100, 175, 255, 125);
+}
+
+
+
+/*
+ --------------------------------------------------------------------------
+ QScrollBar
+ --------------------------------------------------------------------------
+*/
+
+QScrollBar:vertical
+{
+    width: 4px;
+    border-radius: 0px;
+    border: 0px solid black;
+    margin: 0px, 0px, 0px, 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: rgb(45, 45, 45, 120);
+}
+
+QScrollBar::handle:vertical
+{
+    width: 4px;
+    background-color: rgb(75, 75, 75, 150);
+    min-height: 20;
+    border-radius: 2px;
+}
+
+QScrollBar::handle:vertical:hover
+{
+    border: 0px solid #E0E0E0;
+    background-color: rgb(75, 75, 75, 200);
+}
+
+QScrollBar::handle:vertical::disabled
+{
+    background-color: rgb(40, 40, 40, 120);
+}
+
+QScrollBar::up-arrow:vertical
+{
+    border-width: 0px;
+    max-height: 0px;
+    min-width: 0px;
+}
+
+QScrollBar::down-arrow:vertical
+{
+    border-style: outset;
+    border-width: 0px;
+}
+
+QScrollBar::add-line:vertical
+{
+    height: 0px;
+    background-color: transparent;
+    subcontrol-position: bottom;
+}
+
+QScrollBar::sub-line:vertical
+{
+    height: 0px;
+    background-color: transparent;
+    subcontrol-position: top;
+}
+
+
+QScrollBar::add-page:vertical
+{
+    height: 0px;
+    background-color: transparent;
+}
+
+QScrollBar::sub-page:vertical
+{
+    height: 0px;
+    background-color: transparent;
+}
