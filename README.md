@@ -9,6 +9,7 @@ AssetLib Manager for Animation & VFX Studio.
 * Manage user permission by admin
 * Extendable by client
 * Supports Windows, Linux
+* Support Chinese(include sort & filter)
 
 
 ### DEPENDENCY
@@ -32,7 +33,7 @@ AssetLib Manager for Animation & VFX Studio.
 #### 1. Setup Database Server
 * It is strongly recommended to use **_PostgreSQL_**
 
-* Fill the db-information to **_`toycabinet > presets.json`_** file
+* Fill the db-information into **_`toycabinet > presets.json`_** file
     ```json
     {
         "db_type": "postgres",
@@ -49,7 +50,7 @@ AssetLib Manager for Animation & VFX Studio.
     _db_type: postgres/mysql/sqlite_
 
 * Init toolkit's db by running **_`toycabinet > bin > sptc-initdb`_**(linux) or 
-**_`toycabinet > bin > sptc-initdb.bat`_**(windows). If you see messages below means
+**_`toycabinet > bin > sptc-initdb.bat`_**(windows). If messages display as below means
     init toolkit's database success.
     ```
     DB-CONNECT:  
@@ -97,12 +98,53 @@ AssetLib Manager for Animation & VFX Studio.
     startup(context='maya')  # maya / houdini / nuke / ...
     ```
 
+* Default Admin Account
+    ```text
+    name: admin
+    password: 123456
+    ```
+    
+    
+#### 4. Client Opts _`make opts to fit your pipeline`_
+
+* **Folder option** `toycabinet > opt > folder.py`
+
+    ```python    
+    def before_toy_folder_option(toy_location):
+        """do something, return True or False"""
+        pass
+    
+  
+    def after_toy_folder_option(toy_location):
+        """do something, return True or False"""
+        pass
+    ```
+
+    For example:
+    ```python
+    import os
+    from my_office import rpc  # my_office is a fake module ~ ~
+    
+    def before_toy_folder_option(toy_location):
+        if not os.path.exists(toy_location):
+            rpc.create_folder(toy_location)  # Create folder by RPC
+        rpc.chmod(toy_location, '777', recursive=True)   # Change permission mode by RPC
+        return True
+    
+    
+    def after_toy_folder_option(toy_location):
+        rpc.chown(toy_location, 'ple:ple', recursive=True)  # Change owner by RPC
+        rpc.chmod(toy_location, '755', recursive=True)  # Change permission mode by RPC
+        return True
+    ```
+    
 ### SHORTCUTS
 * Alt + Q `Hide/Show Left Sidebar`
 * Alt + W `Hide/Show Hue Filter`
 * Alt + D `Show/Hide Inner Tag Filter`
 * Alt + F `Query from Database`
 * Alt + B `Hide/Show Right Sidebar`
+* Alt + T `SHow/Hide Creator`
 * Alt + (1,2,3,4,5,6) `Auto Fit Size of Toy-Items`
 * Space `Play Sequence`
 * \` `Hide/Show Toy-Item Label`
@@ -113,11 +155,11 @@ AssetLib Manager for Animation & VFX Studio.
 
 
 ### ATTENTION !
-* [**PyQt4 Invalid !**] 
+* **[ PyQt4 Invalid ]** 
 You will always get **Segmentation Fault** if you set QtSide's **_QT_SIDE_BINDING_** env-var to _**pyqt4**_, 
 please use **_pyside_** or **_pyside2_** instead.
 
-* [**COMMUNITY vs ENTERPRISE**]
+* **[ COMMUNITY vs ENTERPRISE ]**
 **One Year Trial Community License**  has full features but quantitative restrictions, 
 such as can only create _**`2 markets`**_ **_`100 toys`_**.
 There's to be no limitation for **Enterprise License**, Cool.
