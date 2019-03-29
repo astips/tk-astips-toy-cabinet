@@ -18,6 +18,35 @@ QWidget {
 
 QListView {
     background-color: transparent;
+    border: 0px;
+    outline: none;
+}
+
+
+TagGroupView {
+    font: 16px;
+    color: rgb(220, 220, 220, 220);
+    background-color: rgb(20, 20, 20, 255);
+    border: 0px;
+    outline: none;
+}
+
+TagGroupView::item:selected:active {
+    background-color: rgb(100, 175, 255, 200);
+}
+
+TagGroupView::item:selected:!active {
+    color: rgb(220, 220, 220, 200);
+    background-color: rgb(100, 175, 255, 150);
+}
+
+TagGroupView::item:non-selected {
+    background-color: transparent;
+}
+
+TagGroupView::item:hover {
+    color: rgb(220, 220, 220, 255);
+    background-color: rgb(150, 75, 75, 100);
 }
 
 

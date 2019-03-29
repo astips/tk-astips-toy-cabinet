@@ -19,7 +19,7 @@ AssetLib Manager for Animation & VFX Studio.
 * [pypinyin](https://github.com/mozillazg/python-pinyin)
 * [Pillow](https://github.com/python-pillow/Pillow)
 * [numpy](https://github.com/numpy/numpy)
-* [enum](https://pypi.org/project/enum34) `1.1.6 +`
+* [enum34](https://pypi.org/project/enum34) `1.1.6 +`
 * [typing](https://github.com/python/typing)
 
 
