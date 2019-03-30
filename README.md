@@ -13,13 +13,13 @@ AssetLib Manager for Animation & VFX Studio.
 
 
 ### DEPENDENCY
-* [QtSide](https://github.com/astips/QtSide) `1.0.2 +`
-* [peewee](https://github.com/coleifer/peewee) `3.8.2 +`
-* [psycopg2](https://github.com/psycopg/psycopg2) `for PostgreSql-DB`
+* [QtSide](https://github.com/astips/QtSide) _`1.0.2 +`_
+* [peewee](https://github.com/coleifer/peewee) _`3.8.2 +`_
+* [psycopg2](https://github.com/psycopg/psycopg2) _`for PostgreSql-DB`_
 * [pypinyin](https://github.com/mozillazg/python-pinyin)
 * [Pillow](https://github.com/python-pillow/Pillow)
 * [numpy](https://github.com/numpy/numpy)
-* [enum34](https://pypi.org/project/enum34) `1.1.6 +`
+* [enum34](https://pypi.org/project/enum34) _`1.1.6 +`_
 * [typing](https://github.com/python/typing)
 
 
@@ -105,9 +105,9 @@ AssetLib Manager for Animation & VFX Studio.
     ```
     
     
-#### 4. Client Opts _`make opts to fit your pipeline`_
+#### 4. Client Opts `make opts to fit your pipeline`
 
-* **Folder option** `toycabinet > opt > folder.py`
+* **Folder option** _`toycabinet > opt > folder.py`_
 
     ```python    
     def before_toy_folder_option(toy_location):
@@ -139,25 +139,25 @@ AssetLib Manager for Animation & VFX Studio.
     ```
     
 ### SHORTCUTS
-* Alt + Q `Hide/Show Left Sidebar`
-* Alt + W `Hide/Show Hue Filter`
-* Alt + D `Show/Hide Inner Tag Filter`
-* Alt + F `Query from Database`
-* Alt + B `Hide/Show Right Sidebar`
-* Alt + T `SHow/Hide Creator`
-* Alt + (1,2,3,4,5,6) `Auto Fit Size of Toy-Items`
-* Space `Play Sequence`
-* \` `Hide/Show Toy-Item Label`
-* Ctrl + \` `Show Toy-Item Detail Information`
-* Alt/Ctrl + LMB(Click) `Show Toy-Item Detail Information`
-* Ctrl + MMW(Wheel) `Dynamic Resize Toy-Items`
-* Ctrl + (+,-) `Dynamic Resize Toy-Items`
+* Alt + Q _`Hide/Show Left Sidebar`_
+* Alt + W _`Hide/Show Hue Filter`_
+* Alt + D _`Show/Hide Inner Tag Filter`_
+* Alt + F _`Query from Database`_
+* Alt + B _`Hide/Show Right Sidebar`_
+* Alt + T _`SHow/Hide Creator`_
+* Alt + (1,2,3,4,5,6) _`Auto Fit Size of Toy-Items`_
+* Space _`Play Sequence`_
+* \` _`Hide/Show Toy-Item Label`_
+* Ctrl + \` _`Show Toy-Item Detail Information`_
+* Alt/Ctrl + LMB(Click) _`Show Toy-Item Detail Information`_
+* Ctrl + MMW(Wheel) _`Dynamic Resize Toy-Items`_
+* Ctrl + (+,-) _`Dynamic Resize Toy-Items`_
 
 
 ### ATTENTION !
 * **[ PyQt4 Invalid ]** 
-You will always get **Segmentation Fault** if you set QtSide's **_QT_SIDE_BINDING_** env-var to _**pyqt4**_, 
-please use **_pyside_** or **_pyside2_** instead.
+You will always get **Segmentation Fault** if you set QtSide's _QT_SIDE_BINDING_ env-var to _pyqt4_, 
+please use _pyside_ or _pyside2_ instead.
 
 * **[ COMMUNITY vs ENTERPRISE ]**
 **One Year Trial Community License**  has full features but quantitative restrictions, 
