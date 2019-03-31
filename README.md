@@ -16,9 +16,8 @@ AssetLib Manager for Animation & VFX Studio.
 * [QtSide](https://github.com/astips/QtSide) _`1.0.2 +`_
 * [peewee](https://github.com/coleifer/peewee) _`3.8.2 +`_
 * [psycopg2](https://github.com/psycopg/psycopg2) _`for PostgreSql-DB`_
-* [pypinyin](https://github.com/mozillazg/python-pinyin)
 * [Pillow](https://github.com/python-pillow/Pillow)
-* [numpy](https://github.com/numpy/numpy)
+* [pypinyin](https://github.com/mozillazg/python-pinyin)
 * [enum34](https://pypi.org/project/enum34) _`1.1.6 +`_
 * [typing](https://github.com/python/typing)
 
@@ -76,15 +75,17 @@ AssetLib Manager for Animation & VFX Studio.
     
     DB-INIT: DONE!
     ```
-#### 2. Set the QT_SIDE_BINDING env-var before running.
-* 
+
+
+#### 2. Startup ToyCabinet
+
+* Set the QT_SIDE_BINDING env-var before running.
+
     ```python
     import os
     os.environ['QT_SIDE_BINDING'] = 'pyside'  # or pyside2
     ```
-
-#### 3. Startup ToyCabinet
-
+    
 * Startup as Standalone
     ```python
     from toycabinet.main import startup
@@ -98,14 +99,14 @@ AssetLib Manager for Animation & VFX Studio.
     startup(context='maya')  # maya / houdini / nuke / ...
     ```
 
-* Default Admin Account
+* Default Admin Account _`you can change the password whenever you want`_
     ```text
-    name: admin
-    password: 123456
+    Name: admin
+    Password: 123456
     ```
     
     
-#### 4. Client Opts `make opts to fit your pipeline`
+#### 3. Client Opts `make opts to fit your pipeline`
 
 * **Folder option** _`toycabinet > opt > folder.py`_
 
@@ -154,7 +155,7 @@ AssetLib Manager for Animation & VFX Studio.
 * Ctrl + (+,-) _`Dynamic Resize Toy-Items`_
 
 
-### ATTENTION !
+### ATTENTION!
 * **[ PyQt4 Invalid ]** 
 You will always get **Segmentation Fault** if you set QtSide's _QT_SIDE_BINDING_ env-var to _pyqt4_, 
 please use _pyside_ or _pyside2_ instead.
@@ -169,6 +170,6 @@ There's to be no limitation for **Enterprise License**, Cool.
 [RELEASE INFO](RELEASE.md)
 
 
-### HAVING ISSUES?
+### ISSUES?
 Please send an email with the error message and a detailed step by step process of how you got the error. Comments, 
 suggestions and bug reports are welcome.
