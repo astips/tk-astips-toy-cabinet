@@ -1,6 +1,10 @@
 # tk-astips-toy-cabinet
 AssetLib Manager for Animation & VFX Studio.
 
+![python](https://img.shields.io/badge/Python-2.7-blue.svg)
+![build](https://img.shields.io/badge/Cython-0.29-blue.svg)
+![license](https://img.shields.io/badge/License-MIT-darkgreen.svg)
+
 
 ### FEATURE
 * Database based (Postgresql/MySql/Sqlite)

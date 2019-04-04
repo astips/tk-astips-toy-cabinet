@@ -4,7 +4,7 @@
  --------------------------------------------------------------------------
 */
 
-QWidget {
+QFrame {
     outline: none;
     background-color: rgb(36, 36, 36, 255);
 }
@@ -21,7 +21,7 @@ QGroupBox {
     border: 0px groove black;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    background-color: rgb(32, 32, 32, 255);
+    background-color: rgb(30, 30, 30, 255);
 }
 
 
@@ -34,7 +34,7 @@ QGroupBox {
 
 QListWidget {
     outline: none;
-    background-color: rgb(35, 35, 35, 255);
+    background-color: rgb(32, 32, 32, 255);
     background-image: url(ICON_PATH/image_attachment.png);
     background-attachment: fixed;
     background-repeat: none;
