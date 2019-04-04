@@ -1,9 +1,11 @@
 # tk-astips-toy-cabinet
 AssetLib Manager for Animation & VFX Studio.
 
+![platform](https://img.shields.io/badge/Platform-(windows)&(linux)-blue.svg)
 ![python](https://img.shields.io/badge/Python-2.7-blue.svg)
 ![build](https://img.shields.io/badge/Cython-0.29-blue.svg)
-![license](https://img.shields.io/badge/License-MIT-darkgreen.svg)
+![license](https://img.shields.io/badge/License-MIT-green.svg)
+![size](https://img.shields.io/badge/Size-12M-yellow.svg)
 
 
 ### FEATURE
@@ -157,6 +159,7 @@ AssetLib Manager for Animation & VFX Studio.
 * Alt/Ctrl + LMB(Click) _`Show Toy-Item Detail Information`_
 * Ctrl + MMW(Wheel) _`Dynamic Resize Toy-Items`_
 * Ctrl + (+,-) _`Dynamic Resize Toy-Items`_
+* Ctrl + Tab _`Switch Aspect-Ratio of Toy-Items`_
 
 
 ### ATTENTION!
