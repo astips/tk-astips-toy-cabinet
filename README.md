@@ -12,7 +12,7 @@ AssetLib Manager for Animation & VFX Studio.
 * Database based (Postgresql/MySql/Sqlite)
 * Tag filter
 * Dominant color filter
-* Manage user permission by admin
+* User permissions manageable
 * Extendable by client
 * Supports Windows, Linux
 * Support Chinese(include sort & filter)
