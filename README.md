@@ -1,5 +1,7 @@
-# tk-astips-toy-cabinet
-AssetLib Manager for Animation & VFX Studio.
+# Toy Cabinet
+Asset Library Manager for Animation & VFX Studio.
+
+`https://github.com/astips/tk-astips-toy-cabinet`
 
 ![platform](https://img.shields.io/badge/Platform-(windows)&(linux)-blue.svg)
 ![python](https://img.shields.io/badge/Python-2.7-blue.svg)
@@ -9,19 +11,19 @@ AssetLib Manager for Animation & VFX Studio.
 
 
 ### FEATURE
-* Database based (Postgresql/MySql/Sqlite)
+* Database based (PostgreSQL, MySQL, SQLite)
 * Tag filter
 * Dominant color filter
-* User permissions manageable
+* User permissions manage-able
 * Extendable by client
-* Supports Windows, Linux
-* Support Chinese(include sort & filter)
+* Supports Windows & Linux
+* Support Chinese (sorting & filtering)
 
 
 ### DEPENDENCY
 * [QtSide](https://github.com/astips/QtSide) _`1.0.2 +`_
 * [peewee](https://github.com/coleifer/peewee) _`3.8.2 +`_
-* [psycopg2](https://github.com/psycopg/psycopg2) _`for PostgreSql-DB`_
+* [psycopg2](https://github.com/psycopg/psycopg2) _`for PostgreSQL`_
 * [Pillow](https://github.com/python-pillow/Pillow)
 * [pypinyin](https://github.com/mozillazg/python-pinyin)
 * [enum34](https://pypi.org/project/enum34) _`1.1.6 +`_
@@ -34,6 +36,7 @@ AssetLib Manager for Animation & VFX Studio.
 
 
 ### USAGE
+
 
 #### 1. Setup Database Server
 * It is strongly recommended to use **_PostgreSQL_**
@@ -112,9 +115,9 @@ AssetLib Manager for Animation & VFX Studio.
     ```
     
     
-#### 3. Client Opts `make opts to fit your pipeline`
+#### 3. Client Options `make opts to fit your pipeline`
 
-* **Folder option** _`toycabinet > opt > folder.py`_
+* Folder option _`toycabinet > opt > folder.py`_
 
     ```python    
     def before_toy_folder_option(toy_location):
@@ -127,7 +130,7 @@ AssetLib Manager for Animation & VFX Studio.
         pass
     ```
 
-    For example:
+    _example:_
     ```python
     import os
     from my_office import rpc  # my_office is a fake module ~ ~
@@ -138,28 +141,29 @@ AssetLib Manager for Animation & VFX Studio.
         rpc.chmod(toy_location, '777', recursive=True)   # Change permission mode by RPC
         return True
     
-    
+
     def after_toy_folder_option(toy_location):
         rpc.chown(toy_location, 'ple:ple', recursive=True)  # Change owner by RPC
         rpc.chmod(toy_location, '755', recursive=True)  # Change permission mode by RPC
         return True
     ```
-    
+
+
 ### SHORTCUTS
 * Alt + Q _`Hide/Show Left Sidebar`_
-* Alt + W _`Hide/Show Hue Filter`_
-* Alt + D _`Show/Hide Inner Tag Filter`_
+* Alt + W _`Hide/Show Right Sidebar`_
+* Alt + E _`Show/Hide Inner Tag Filter`_
+* Alt + R _`Hide/Show Hue Filter`_
+* Alt + T _`Show/Hide Creator`_
 * Alt + F _`Query from Database`_
-* Alt + B _`Hide/Show Right Sidebar`_
-* Alt + T _`SHow/Hide Creator`_
+* Alt + D _`Show Toy-Item Detail Information`_
 * Alt + (1,2,3,4,5,6) _`Auto Fit Size of Toy-Items`_
-* Space _`Play Sequence`_
-* \` _`Hide/Show Toy-Item Label`_
-* Ctrl + \` _`Show Toy-Item Detail Information`_
 * Alt/Ctrl + LMB(Click) _`Show Toy-Item Detail Information`_
 * Ctrl + MMW(Wheel) _`Dynamic Resize Toy-Items`_
 * Ctrl + (+,-) _`Dynamic Resize Toy-Items`_
-* Ctrl + Tab _`Switch Aspect-Ratio of Toy-Items`_
+* Ctrl + A _`Switch Aspect-Ratio of Toy-Items`_
+* \` _`Hide/Show Toy-Item Label`_
+* Space _`Play Sequence`_
 
 
 ### ATTENTION!
