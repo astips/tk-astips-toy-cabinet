@@ -16,8 +16,8 @@ Asset Library Manager for Animation & VFX Studio.
 * Dominant color filter
 * User permissions manage-able
 * Extendable by client
-* Supports Windows & Linux
-* Support Chinese (sorting & filtering)
+* Support Windows & Linux
+* Support Chinese (Sorting & Filtering)
 
 
 ### DEPENDENCY
@@ -137,7 +137,7 @@ Asset Library Manager for Animation & VFX Studio.
     
     def before_toy_folder_option(toy_location):
         if not os.path.exists(toy_location):
-            rpc.create_folder(toy_location)  # Create folder by RPC
+            rpc.makedirs(toy_location)  # Create folder by RPC
         rpc.chmod(toy_location, '777', recursive=True)   # Change permission mode by RPC
         return True
     
@@ -175,6 +175,7 @@ please use _pyside_ or _pyside2_ instead.
 **One Year Trial Community License**  has full features but quantitative restrictions, 
 such as can only create _**`2 markets`**_ **_`100 toys`_**.
 There's to be no limitation for **Enterprise License**, Cool.
+Email to get the Enterprise License.
 
 
 ### RELEASE
