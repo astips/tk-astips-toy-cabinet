@@ -120,13 +120,24 @@ Asset Library Manager for Animation & VFX Studio.
 * Folder option _`toycabinet > opt > folder.py`_
 
     ```python    
-    def before_toy_folder_option(toy_location):
-        """do something, return True or False"""
+    def before_folder_option(location):
+        """location: folder full path"""
+        # do something, return True or False
         pass
     
   
-    def after_toy_folder_option(toy_location):
-        """do something, return True or False"""
+    def after_folder_option(location):
+        """location: folder full path"""
+        # do something, return True or False
+        pass
+    
+    
+    def retire_folder(location, new_name):
+        """
+        location: folder full path
+        new_name: new folder name (not path, just a name string)
+        """
+        # do something, return True or False
         pass
     ```
 
@@ -135,16 +146,23 @@ Asset Library Manager for Animation & VFX Studio.
     import os
     from my_office import rpc  # my_office is a fake module ~ ~
     
-    def before_toy_folder_option(toy_location):
-        if not os.path.exists(toy_location):
-            rpc.makedirs(toy_location)  # Create folder by RPC
-        rpc.chmod(toy_location, '777', recursive=True)   # Change permission mode by RPC
+  
+    def before_folder_option(location):
+        if not os.path.exists(location):
+            rpc.create_folder(location)
+        rpc.chmod(location, '777', recursive=True)  # change mode by rpc
         return True
     
-
-    def after_toy_folder_option(toy_location):
-        rpc.chown(toy_location, 'ple:ple', recursive=True)  # Change owner by RPC
-        rpc.chmod(toy_location, '755', recursive=True)  # Change permission mode by RPC
+    
+    def after_folder_option(location):
+        rpc.chown(location, 'ple:ple', recursive=True) # change owner by rpc
+        rpc.chmod(location, '755', recursive=True)  # change mode by rpc
+        return True
+    
+    
+    def retire_folder(location, new_name):
+        parent_folder = os.path.dirname(location)
+        rpc.rename_folder(location, os.path.join(parent_folder, new_name))
         return True
     ```
 
