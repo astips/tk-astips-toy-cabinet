@@ -3,20 +3,17 @@
 import os
 
 
-def before_toy_folder_option(toy_location):
-    if not os.path.exists(toy_location):
-        os.makedirs(toy_location)
+def before_folder_option(location):
+    if not os.path.exists(location):
+        os.makedirs(location)
     return True
 
 
-def after_toy_folder_option(toy_location):
+def after_folder_option(location):
     return True
 
 
-def retire_toy_folder(toy_location, toy_item):
-    # shutil.rmtree(location)  # We will not delete it, just rename & tag it as retired.
-    root_path = os.path.dirname(toy_location)
-    os.rename(
-        toy_location, os.path.join(root_path, '{0}___RETIRED___ID_{1}'.format(toy_item.path, toy_item.id))
-    )
+def retire_folder(location, new_name):
+    parent_folder = os.path.dirname(location)
+    os.rename(location, os.path.join(parent_folder, new_name))
     return True
