@@ -75,7 +75,7 @@ QPushButton:hover {
 }
 
 QPushButton:pressed {
-    background-color: rgb(10, 10, 10, 75);
+    background-color: rgb(10, 10, 10, 255);
     border-style: inset;
 }
 
