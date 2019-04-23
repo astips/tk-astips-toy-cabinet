@@ -416,32 +416,32 @@ QSlider::sub-page:horizontal {
 
 QScrollBar:vertical
 {
-    width: 4px;
-    border-radius: 2px;
+    width: 6px;
+    border-radius: 3px;
     border: 0px solid black;
     margin: 0px, 0px, 0px, 0px;
     padding-top: 0px;
     padding-bottom: 0px;
-    background-color: rgb(100, 100, 100, 100);
+    background-color: rgb(48, 48, 48, 255);
 }
 
 QScrollBar::handle:vertical
 {
-    width: 4px;
-    background-color: rgb(100, 100, 100, 120);
+    width: 6px;
+    background-color: rgb(69, 69, 69, 255);
     min-height: 20;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 QScrollBar::handle:vertical:hover
 {
     border: 0px solid #E0E0E0;
-    background-color: rgb(100, 100, 100, 200);
+    background-color: rgb(75, 75, 75, 255);
 }
 
 QScrollBar::handle:vertical::disabled
 {
-    background-color: rgb(100, 100, 100, 100);
+    background-color: rgb(48, 48, 48, 255);
 }
 
 QScrollBar::up-arrow:vertical
@@ -455,32 +455,33 @@ QScrollBar::down-arrow:vertical
 {
     border-style: outset;
     border-width: 0px;
+    max-height: 0px;
 }
 
 QScrollBar::add-line:vertical
 {
     height: 0px;
-    background-color: rgb(60, 60, 60, 50);
+    background-color: rgb(48, 48, 48, 255);
     subcontrol-position: bottom;
 }
 
 QScrollBar::sub-line:vertical
 {
     height: 0px;
-    background-color: rgb(60, 60, 60, 50);
+    background-color: rgb(48, 48, 48, 255);
     subcontrol-position: top;
 }
 
 QScrollBar::add-page:vertical
 {
     height: 0px;
-    background-color: rgb(60, 60, 60, 50);
+    background-color: rgb(48, 48, 48, 255);
 }
 
 QScrollBar::sub-page:vertical
 {
     height: 0px;
-    background-color: rgb(60, 60, 60, 50);
+    background-color: rgb(48, 48, 48, 255);
 }
 
 QScrollBar:horizontal

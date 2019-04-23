@@ -166,6 +166,24 @@ Asset Library Manager for Animation & VFX Studio.
         return True
     ```
 
+* Data option _`toycabinet > opt > data.py`_
+    ```python
+    def archive_database():
+        """Archive Database"""
+        # do something
+        return True
+    ```
+
+    _example:_
+    
+    ```python
+    import os
+    from my_office import rpc  # my_office is a fake module ~ ~
+    
+    def archive_database():
+        rpc.toy_cabinet_db_archive()
+        return True
+    ```
 
 ### SHORTCUTS
 * Alt + Q _`Hide/Show Left Sidebar`_
