@@ -416,7 +416,7 @@ QSlider::sub-page:horizontal {
 
 QScrollBar:vertical
 {
-    width: 6px;
+    width: 8px;
     border-radius: 3px;
     border: 0px solid black;
     margin: 0px, 0px, 0px, 0px;
@@ -427,10 +427,14 @@ QScrollBar:vertical
 
 QScrollBar::handle:vertical
 {
-    width: 6px;
+    width: 8px;
     background-color: rgb(69, 69, 69, 255);
     min-height: 20;
     border-radius: 3px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-right: 6px;
 }
 
 QScrollBar::handle:vertical:hover
